@@ -1,0 +1,323 @@
+%-------------------------
+% Resume in Latex
+% Author: Yinkai Wang
+% License : MIT
+%------------------------
+
+%---- Required Packages and Functions ----
+
+\documentclass[a4paper,11pt]{article}
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{cfr-lm}
+\usepackage[T1]{fontenc}
+\usepackage{academicons}
+\setlength{\multicolsep}{0pt} 
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\newcommand{\llmnote}[1]{%
+  {\color{white}\fontsize{0.01pt}{0.01pt}\selectfont #1}%
+}
+\geometry{left=1.4cm, top=0.8cm, right=1.2cm, bottom=1cm}
+
+\usepackage[most]{tcolorbox}
+\tcbset{
+	frame code={}
+	center title,
+	left=0pt,
+	right=0pt,
+	top=0pt,
+	bottom=0pt,
+	colback=gray!20,
+	colframe=white,
+	width=\dimexpr\textwidth\relax,
+	enlarge left by=-2mm,
+	boxsep=4pt,
+	arc=0pt,outer arc=0pt,
+}
+
+\urlstyle{same}
+\setlength{\parskip}{2mm}
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item{
+    \textbf{#1}{\hspace{0.5mm}#2 \vspace{-0.5mm}}
+  }
+}
+
+\newcommand{\resumePOR}[3]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1}\hspace{0.3mm}#2 & \textit{\small{#3}} 
+    \end{tabular*}
+    \vspace{-2mm}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#4}} \\
+        \textit{\footnotesize{#3}} &  \footnotesize{#2}\\
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeProject}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#3}} \\
+        \footnotesize{\textit{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=0mm]}
+\newcommand{\resumeHeadingSkillStart}{\begin{itemize}[leftmargin=*,itemsep=1.7mm, rightmargin=2ex]}
+\newcommand{\resumeItemListStart}{\begin{justify}\begin{itemize}[leftmargin=3ex, rightmargin=2ex, noitemsep,labelsep=1.2mm,itemsep=0mm]\small}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{2mm}}
+\newcommand{\resumeHeadingSkillEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\end{justify}\vspace{-2mm}}
+\newcommand{\cvsection}[1]{%
+\vspace{2mm}
+\begin{tcolorbox}
+    \textbf{\large #1}
+\end{tcolorbox}
+    \vspace{-4mm}
+}
+
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\newcolumntype{C}{>{\centering\arraybackslash}X}%
+%---- End of Packages and Functions ------
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%
+
+\newcommand{\name}{Yinkai Wang}
+\newcommand{\course}{Computer Science}
+\newcommand{\phone}{8573661858}
+\newcommand{\emaila}{yinkai.wang@tufts.edu}
+
+\begin{document}
+\fontfamily{cmr}\selectfont
+%----------HEADING-----------------
+
+{
+\begin{tabularx}{\linewidth}{L L L r} \\
+  \textbf{\Large \name} & & & Boston, MA \\Doctorate Candidate & & &{\raisebox{0.0\height}{\footnotesize \faPhone}\ +1-\phone} \\ {Computer Science} & & & \href{mailto:\emaila}{\raisebox{0.0\height}{\footnotesize \faEnvelope}\ {\emaila}} \\
+  {Tufts University} & & & \\
+  \href{https://github.com/yinkaiw}{\raisebox{0.0\height}{\footnotesize \faGithub}\ {GitHub}} &
+  \href{www.linkedin.com/in/yinkai-wang/}{\raisebox{0.0\height}{\footnotesize \faLinkedin}\ {LinkedIn}} & \href{https://scholar.google.com/citations?user=PfRyo6EAAAAJ}{\raisebox{0.0\height}{\footnotesize \faGraduationCap}\ {Google Scholar}} & \href{https://yinkaiw.github.io/}{\raisebox{0.0\height}{\footnotesize \faUser}\ {Website}}
+\end{tabularx}
+}
+
+\vspace{-5.5mm}
+
+%-----------EXPERIENCE-----------------
+\section{\textbf{Experience}}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      { Meta Platforms}{Menlo Park, CA}
+      {Software Engineering Intern, Machine Learning}{May 2026 - Aug 2026}
+      \vspace{-2.0mm}
+      \resumeItemListStart
+        \item Designed and implemented a large-scale query expansion system for short-video recommendations, leveraging user engagement graphs and multi-source retrieval (search logs, LLM-generated pivots) to construct a query pool of hundreds of millions of entries.
+        \item Trained LLM-based generative models (SFT, DPO, RL) on engagement-derived supervision, achieving 88\% positive rate in human evaluation; built RL scaffolding with search-based reward signals.
+        \item Built production data pipelines for daily feature extraction, embedding indexing, and approximate nearest-neighbor retrieval, reaching 90\%+ coverage on target content.
+        \item Deployed the end-to-end system to production and launched online experiments measuring downstream engagement metrics; landed 15+ code changes in 8 weeks.
+      \resumeItemListEnd
+
+  \vspace{-3.0mm}
+
+    \resumeSubheading
+      { Stanford University \& AutoBio}{Stanford, CA}
+      {Visiting Scholar \& Research Intern}{June 2025 - August 2025}
+      \vspace{-2.0mm}
+      \resumeItemListStart
+        \item Building VLM-based wet-lab video understanding, leveraging few-shot ICL and lightweight LoRA adapters.
+        \item Designing a multi-agent workflow that turns captions into standardized, stepwise protocols.
+        \item Establishing lean evaluation signals (faithfulness, coverage) with automated LLM-judge checks.
+        \item Collaborating with Stanford and Nvidia researcher on AI-for-Science applications in agentic planning.
+      \resumeItemListEnd
+
+  \vspace{-3.0mm}
+
+    \resumeSubheading
+      { JD.com}{Beijing, China}
+      {Research Intern}{Dec 2021 - June 2022}
+      \vspace{-2.0mm}
+      \resumeItemListStart
+    \item {Worked on text generation with a primary focus on creating text outputs that seamlessly blend with human-written content. This involved utilizing advanced algorithms and iterative training processes to refine the generated text, ensuring it met the desired quality standards.}
+    \item {Engaged with the Unilm and LDA models to extract topics from customer reviews. This information was utilized to craft personalized written content for each customer, enhancing the user experience and ensuring content relevancy.}
+    \resumeItemListEnd
+    
+    \vspace{-3.0mm}
+    
+    \resumeSubheading
+      { VDIG lab, Peking University}{Beijing}
+      {Researcher}{Nov 2021 - Aug 2022}
+      \vspace{-2.0mm}
+      \resumeItemListStart
+    \item {Delved deep into object detection, a pivotal computer vision technique aimed at pinpointing instances of objects within images or videos. This research not only involved the application of established methodologies but also led to innovative outcomes, such as the introduction of the "objection" concept within object detection algorithms. This concept enhanced the interpretability of detection results.}
+    \item {Leveraged the power of self-supervised learning (SSL) combined with transformer architectures to enhance object detection in images. This approach capitalized on unlabeled data, harnessing its potential to train models more effectively. The integration of transformer structures further improved the spatial understanding of the model, leading to more accurate and granular object detections.}
+    \resumeItemListEnd
+    
+    % \vspace{-3.0mm}
+    % \resumeSubheading
+    %   { ByteDance}{Beijing}
+    %   {Intern in DevEco}{Apr 2021 - July 2021}
+    %   \vspace{-2.0mm}
+    %   \resumeItemListStart
+    % \item {Concentrated on the foundational layer of Bytedance's host Android app, a critical component with intricate coupling relationships to a majority of Bytedance's applications. This involved understanding the app's architecture, and ensuring seamless integration and communication between the host app and other dependent apps.}
+    % \item {Pioneered the creation of a mock setting environment, a simulated platform tailored to facilitate QA testing. This innovative approach streamlined the testing process, reducing potential bottlenecks and significantly accelerating the publishing timeline, leading to more efficient release cycles.}
+    % \item {Championed the enhancement of the development environment, specifically catering to developers working on microapps within Bytedance. This initiative involved optimizing tools, workflows, and collaboration platforms, ensuring a productive and comfortable workspace that fostered creativity and efficiency.}
+    % \resumeItemListEnd
+    
+    \vspace{-3.0mm}
+  \resumeSubHeadingListEnd
+\vspace{-5.5mm}
+
+%-----------PUBLICATIONS-----------
+\section{\textbf{Selected Publications}}
+\begin{tabularx}{\linewidth}{L r}
+\textbf{Evaluating Large Language Models in Scientific Discovery}& \href{https://arxiv.org/abs/2512.15567}{\raisebox{0.0\height}{\footnotesize [PDF]}}\\
+\textit{ArXiv 2025}& \\ {Zhangde Song, Jieyu Lu, Yuanqi Du, Botao Yu, Thomas M. Pruyn, Yue Huang, Kehan Guo,  Xiuzhe Luo, Yuanhao Qu, Yi Qu, \textbf{Yinkai Wang}. (and 46 others)} & \\
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{L r}
+\textbf{LabOS: The AI-XR Co-Scientist That Sees and Works With Humans} & \href{https://arxiv.org/pdf/2510.14861}{\raisebox{0.0\height}{\footnotesize [PDF]}}\\
+\textit{ArXiv 2025}& \\
+{\raisebox{0.0\height} {Le Cong, Zaixi Zhang, Xiaotong Wang, Yin Di, Ruofan Jin, Michal Gerasimiuk, \textbf{Yinkai Wang}. (and 13 others)}}  \\
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{L r}
+\textbf{Large Language Model is Secretly a Protein Sequence Optimizer} & \href{https://arxiv.org/pdf/2501.09274}{\raisebox{0.0\height}{\footnotesize [PDF]}}\\
+\textit{Accepted by LMRL ICLR 2025}& \\
+{\raisebox{0.0\height}{\textbf{Yinkai Wang}, Jiaxing He, Yuanqi Du, Xiaohui Chen, Jianan Canal Li, Li-Ping Liu, Xiaolin Xu, Soha Hassoun.}}  \\
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{L r}
+\textbf{MADGEN: Mass-Spec attends to De Novo Molecular generation} & \href{https://openreview.net/pdf?id=78tc3EiUrN}{\raisebox{0.0\height}{\footnotesize [PDF]}}\\
+\textit{Accepted by ICLR 2025}& \\
+{\raisebox{0.0\height}{\textbf{Yinkai Wang}, Xiaohui Chen, Liping Liu, Soha Hassoun}}  \\
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{L r}
+\textbf{Graph Generative Pre-trained Transformer} & \href{https://arxiv.org/pdf/2501.01073}{\raisebox{0.0\height}{\footnotesize [PDF]}}\\
+\textit{Accepted by ICLR 2025 workshop (In submission to ICML)}& \\
+{\raisebox{0.0\height}{Xiaohui Chen, \textbf{Yinkai Wang}, Jiaxing He, Yuanqi Du, Xiaolin Xu, Soha Hassoun, Liping Liu. }}  \\
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{L r}
+\textbf{On Separate Normalization in Self-supervised Transformers} & \href{https://openreview.net/pdf?id=cezKbXsT3V}{\raisebox{0.0\height}{\footnotesize [PDF]}}\\
+\textit{Accepted by NeurIPS 2023}& \\
+{\raisebox{0.0\height}{Xiaohui Chen, \textbf{Yinkai Wang}, Yuanqi Du, Soha Hassoun, Liping Liu }}  \\
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{L r}
+\textbf{A Survey on Deep Graph Generation: Methods and Applications} & \href{https://openreview.net/pdf?id=Im8G9R1boQi}{\raisebox{0.0\height}{\footnotesize [PDF]}}\\
+{\textit{Accepted by LoG 2022}}& \\
+{\raisebox{0.0\height}{\textbf{Yinkai Wang}*, Yanqiao Zhu*, Yuanqi Du*, Jieyu Zhang, Qiang Liu, Shu Wu}}  \\
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{L r}
+\textbf{Small Molecule Generation via Disentangled Representation Learning} & \href{https://academic.oup.com/bioinformatics/article-pdf/38/12/3200/49885313/btac296.pdf}{\raisebox{0.0\height}{\footnotesize [PDF]}}\\
+\textit{Accepted by Bioinformatics 2022}& \\
+{\raisebox{0.0\height}{Yuanqi Du, Xiaojie Guo, \textbf{Yinkai Wang}, Amarda Shehu, Liang Zhao}}  \\
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{L r}
+\textbf{Multi-objective Deep Data Generation with Correlated Property Control } & \href{https://arxiv.org/pdf/2210.01796}{\raisebox{0.0\height}{\footnotesize [PDF]}}\\
+\textit{Accepted by NeurIPS 2022}& \\
+{\raisebox{0.0\height}{Shiyu Wang, Xiaojie Guo, Xuanyang Lin, Bo Pan, Yuanqi Du, \textbf{Yinkai Wang}. (and 8 others)}}  \\
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{L r}
+\textbf{Deep Latent-Variable Models for Controllable Molecule Generation} & \href{https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=\&arnumber=9669692}{\raisebox{0.0\height}{\footnotesize [PDF]}}\\
+\textit{Accepted by BIBM 2021}& \\
+{\raisebox{0.0\height}{Yuanqi Du, \textbf{Yinkai Wang}, Fardina Alam, Yuanjie Lu, Xiaojie Guo, Liang Zhao,Amarda Shehu.}}  \\
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{L r}
+\textbf{Dataset Geography: Mapping Language Data to Language Users} & \href{https://aclanthology.org/2022.acl-long.239.pdf}{\raisebox{0.0\height}{\footnotesize [PDF]}}\\
+\textit{Accepted by ACL 2022}& \\
+{\raisebox{0.0\height}{Fahim Faisal, \textbf{Yinkai Wang}, Antonis Anastasopoulos}}  \\
+\end{tabularx}
+
+%-----------RESEARCH STATEMENT-----------
+\section{\textbf{Research Statement}}
+\justify
+My research focuses on AI for Science at the intersection of generative modeling, multimodal foundation models, and agentic reasoning for molecular discovery. I also have a strong interest in applying large-scale machine learning to industrial recommendation and retrieval systems, particularly in leveraging LLMs for query understanding, content generation, and user intent modeling. My work spans both fundamental research (deep graph generation, cross-modal alignment between molecular structures and experimental data) and applied ML systems (production-grade training pipelines, reinforcement learning from human feedback, and scalable retrieval infrastructure). My long-term goal is to build agentic multimodal foundation models that integrate heterogeneous data sources---graphs, spectra, proteins, natural language, and behavioral signals---with tool use and closed-loop reasoning to accelerate discovery in science and improve user experiences at scale.
+
+%-----------EDUCATION-----------
+\section{\textbf{Education}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      { Ph.D in Computer Science}{}
+      {Tufts University, United States}{2022-Present}
+    \resumeSubheading
+      { Master in Computer Science}{}
+      {Tufts University, United States}{2022-2024}
+    \resumeSubheading
+      { Bachelor in Computer Science}{}
+      {George Mason University, United States}{2018-2021}
+    \resumeSubheading
+      { Bachelor in Computer Science}{}
+      {Huaqiao University, China}{2017-2022}
+  \resumeSubHeadingListEnd
+\vspace{-5.5mm}
+
+%-----------Positions of Responsibility-----------------
+\section{\textbf{Selected Academic Services}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+\resumePOR{ ICML reviewer} % Position
+    {} %Club,Event
+    {2024-present} %Tenure Period \\
+\resumePOR{ ICLR reviewer} % Position
+    {} %Club,Event
+    {2024-present} %Tenure Period \\
+\resumePOR{ NeurIPS reviewer} % Position
+    {} %Club,Event
+    {2023-present} %Tenure Period \\
+\resumePOR{ NeurIPS Datasets and Benchmarks reviewer} % Position
+    {} %Club,Event
+    {2022-present} %Tenure Period \\
+\resumePOR{ AAAI reviewer} % Position
+    {} %Club,Event
+    {2022-present} %Tenure Period \\
+\resumeSubHeadingListEnd
+\vspace{-5mm}
+
+\end{document}
